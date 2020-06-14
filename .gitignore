@@ -1,1 +1,4 @@
 .idea/
+*/__pycache__/
+src/reducers/__pycache__/__init__.cpython-37.pyc
+src/reducers/__pycache__/unique_reducer.cpython-37.pyc
