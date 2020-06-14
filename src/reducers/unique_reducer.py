@@ -9,7 +9,7 @@ class UniqueReducer(object):
         self.DOTS = [3, 2, 1]
 
     def enter_strings(self):
-        count_strings = int(input("Enter count strings."))
+        self.count_strings = int(input("Enter count strings."))
         self.input_strings = [[] for y in range(self.count_strings)]
         self._strings = []
         for i in range(self.count_strings):
@@ -18,7 +18,7 @@ class UniqueReducer(object):
             self._strings.append(current_string)
 
     def input_max_length(self):
-        self.max_length = input("Enter limit max_length")
+        self.max_length = int(input("Enter limit max_length"))
 
     def reduce_strings(self):
         self.input_strings = self._check_duplicates()
